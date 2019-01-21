@@ -5,6 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <com.example.wuyd2.myapplication.DoughnutProgress
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/DoughnutProgress"/>
 
 
 
@@ -32,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        android:text="跳转activity2"
+        android:text="上传日志"
         android:id="@+id/button4"/>
     <Button
         android:layout_width="wrap_content"
