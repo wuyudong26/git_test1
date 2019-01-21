@@ -165,7 +165,7 @@ public class MyLog {
         }else {
             File[] files=getFils();
             for(int i=0;i<files.length;i++){
-                if(files[i].length()<1024*20){
+                if(files[i].length()<1024*10*1024){
                     isRequireNewFile=false;
                     File file1= files[i];
                     writeDate(file1,log);

@@ -14,8 +14,8 @@ import android.util.AttributeSet;
 import android.view.View;
 
 public class DoughnutProgress extends View {
-    private static final int DEFAULT_MIN_WIDTH = 400; //View默认最小宽度
-    private static final int RED = 230, GREEN = 85, BLUE = 35; //基础颜色，这里是橙红色
+    private static final int DEFAULT_MIN_WIDTH = 150; //View默认最小宽度
+    private static final int RED = 35, GREEN = 85, BLUE = 230; //基础颜色，这里是橙红色
     private static final int MIN_ALPHA = 30; //最小不透明度
     private static final int MAX_ALPHA = 255; //最大不透明度
     private static final float doughnutRaduisPercent = 0.65f; //圆环外圆半径占View最大半径的百分比

@@ -43,14 +43,14 @@ public class App extends Application {
         crashHandler.init(getApplicationContext());
         AppCache.setContext(this);
         mContext = this;
-        files=MyLog.getFils();
+//        files=MyLog.getFils();
 //            程序崩溃后，再次第一次打开时将日志上传至服务器
-        if(null!=files){
-            url="http://202.99.114.136:10002/uploadfile";
-            for (int i=0;i<files.length;i++){
-                list.add(files[i].getPath());
-            }
-            upload (list);
+//        if(null!=files){
+//            url="http://202.99.114.136:10002/uploadfile";
+//            for (int i=0;i<files.length;i++){
+//                list.add(files[i].getPath());
+//            }
+//            upload (list);
 //            upLoadFile(url, list, new Callback() {
 //                @Override
 //                public void onFailure(Call call, IOException e) {
@@ -68,7 +68,7 @@ public class App extends Application {
 //                }
 //            });
 
-        }
+//        }
     }
     public void upload (final List<String> list){
         new Thread(new Runnable()
